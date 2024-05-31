@@ -1,22 +1,14 @@
 /*EJERCICIO 1*/
 console.log('Ejercicio 1')
-const Ex1NoParam = () => {
-  const a = 10
-  const b = 5
+const Ex1Sum = (a = 10, b = 5) => {
   console.log(`El resultado es ${a + b}`)
 }
-Ex1NoParam()
-const Ex1UnParam = (array) => {
-  console.log(`El resultado es ${array[0] + array[1]}`)
-}
-const a = 10
-const b = 5
-let numeros = [a, b]
-Ex1UnParam(numeros)
-const Ex1DosParam = (a, b) => {
-  console.log(`El resultado es ${a + b}`)
-}
-Ex1DosParam(a, b)
+console.log('El resultado sin parametros es')
+Ex1Sum()
+console.log('El resultado con un parámetro es')
+Ex1Sum(10)
+console.log('El resultado con dos parámetros es')
+Ex1Sum(10, 5)
 /*EJERCICIO 2*/
 console.log('Ejercicio 2')
 const game = {
